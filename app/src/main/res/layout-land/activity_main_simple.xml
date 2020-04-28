@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".ActivitySimple"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/black"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="History:"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
+        <include
+            layout="@layout/history_panel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <include
+                layout="@layout/buttons_simple"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
